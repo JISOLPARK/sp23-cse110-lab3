@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="index.css">
 <html lang="en">
   <head>    
     <meta charset = "UTF-8">
@@ -7,10 +8,10 @@
   <link href = "/images/favicon.ico" rel="icon" type="image/x-icon">
   <body>
     <header>
-      <h4>Today's date:</h4>
-      <p>April 23, 2023</p>
+      <h4 id >Today's date:</h4>
+      <p id = "date">April 23, 2023</p>
       <nav>
-        <a href="#">Home</a>
+        <a id ="home" href="#">Home</a>
       </nav>
     </header>
     <main>
@@ -19,14 +20,15 @@
       <p>this is lab2 in <b> CSE 110</b></p>
       </section>
       <hr>
-      <div>
+      <div class = "agenda">
         <h2>Agenda</h2>
         <ol>
           <li>Figure out <strong>magic 8 ball</strong></li>
           <li>Finish up <i>presentation</i></li>
+          <li>Add instruction to the magic 8 ball</li>
         </ol>
       </div>
-      <div>
+      <div class ="comments">
         <h3>Comments/Questions</h3>
         <ul>
           <li><em>When</em> is the next meeting? (tbd)</li>
@@ -37,16 +39,21 @@
         <summary>Summary of the meeting </summary>
         <p>discussed and planned the to do lists for the group</p>
       </details>
-      <div>
+      <div class = "audio_video">
         <audio controls>
-          <source src = ".mp3">
+          <source src = "audio/helloAudio.m4a">
+        </audio>  
+        <audio controls>
+          <source src = "audio/helloAudio.m4a">
         </audio>  
         <video controls>
-          <source src = ".mp4">
+          <source src = "video/introVideo.mov">
         </video>
+      </div>
+      <div class = "form">
         <form>
           <h2> form: </h2>
-          <img src = "images/four_seasons.webp">
+          <img src = "images/four_seasons.webp" id = "season_pic">
           <fieldset>
             <label for ="seasons">Choose your favorite season:</label>
             <select id="seasons" name ="seasons" required>
@@ -62,7 +69,7 @@
             <textarea id="reasons" name = "reason"></textarea><br>
             <label for = "name">Name:</label>
             <input type = "text" id="name">
-            <button type = "submit">Submit</button>
+            <button id = "submit" type = "submit">Submit</button>
           </fieldset>
         </form>
       </div>

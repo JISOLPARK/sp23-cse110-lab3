@@ -1,0 +1,90 @@
+/* this file will modify index.html */
+
+/* 1. General CSS Topics */
+/* Colors */
+/* universal selector */
+*{
+    margin:0;
+}
+/* selector list */
+h1, h2{
+    font-size:medium;
+}
+@font-face{
+    font-family:'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/Roboto-Black.ttf");
+}
+/* element selector */
+h1{
+    color: aquamarine;
+}
+p{
+    font-size:1.5em; /* 1st relative units */
+    font-family:'Roboto', Courier, monospace
+}
+/* class selector */
+.form{
+    background-image: url(images/clouds.jpeg);
+    background-size: 300px; /*1st absolute unit*/
+    color:beige;
+    font-size: 1.5rem; /* 2nd relative unit */
+    text-align: center;
+}
+#submit{
+    background-color:bisque;
+    color:blueviolet;
+    font-size: 1.5ex; /* 3rd relative unit */
+}
+#submit:hover{
+    background-color:blue;
+}
+#home:active{
+    background-color: yellow;
+}
+/*2 absolute units and sizing */
+#season_pic{
+    width: 300mm; 
+    height: 20cm;
+}
+/* Box Model */
+.audio_video{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    background-color: beige;
+    display: inline-block;
+    display:grid;
+    grid-template-columns: [first] 300px [line2] 300px [line3] auto;
+    grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+}
+.agenda{
+    border: 2px solid darkorchid;
+    border-radius: 5px;
+    background-color: lightpink;
+    margin-top: 10px;
+    padding-top: 10px;
+    display:flex;
+    order:4;
+}
+.comments{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    background-color: lightblue;
+    display:grid;
+    position: static;
+}
+#date{
+    border: 2px solid orange;
+    border-radius: 5px;
+    background-color: beige;
+    font-size: 1.5em;
+    display: inline-block;
+    position: fixed;
+}
+
+/* attribute selector */
