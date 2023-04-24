@@ -6,9 +6,21 @@
 *{
     margin:0;
 }
+/* child combinator */
+div > *{
+    font-size: 10px;
+}
 /* selector list */
 h1, h2{
     font-size:medium;
+}
+/* general sibling combinator */
+h2 ~ h3{
+    color:red;
+}
+/* adjacent sibling combinator */
+h2 +  h3{
+    font-style: italic;
 }
 @font-face{
     font-family:'Roboto';
@@ -20,7 +32,8 @@ h1, h2{
 h1{
     color: aquamarine;
 }
-p{
+/* descendant combinator */
+div p{
     font-size:1.5em; /* 1st relative units */
     font-family:'Roboto', Courier, monospace
 }
@@ -88,3 +101,18 @@ p{
 }
 
 /* attribute selector */
+div[type="text"]{
+    border: 1px;
+}
+/* combining two selectors */
+p.agenda{
+    color:blue;
+}
+/* descent combinator*/
+div h2{
+    color: orange;
+}
+/* responsiveness */
+@media screen{
+    font-size: 20px;
+}
